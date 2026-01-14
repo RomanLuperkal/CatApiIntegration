@@ -2,6 +2,7 @@ services:
   fake-cat-api:
     image: wiremock/wiremock:3.4.2
     container_name: fake-cat-api
+    command: [ "--verbose" ]
     ports:
       - "8081:8080"
     volumes:
